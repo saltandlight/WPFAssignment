@@ -1,0 +1,23 @@
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\App.g.cs
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\_01.Calculator_MarkupCompile.cache
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\_01.Calculator.exe
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\_01.Calculator.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\Calculator.Properties.Resources.resources
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\01. Calculator.csproj.GenerateResource.Cache
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\_01.Calculator.exe
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\_01.Calculator.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\MainWindowView.g.cs
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\_01.Calculator_MarkupCompile.lref
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\MainWindowView.baml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\_01.Calculator.g.resources
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\System.Windows.Interactivity.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\System.Windows.Interactivity.xml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll

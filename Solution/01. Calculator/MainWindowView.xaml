@@ -1,0 +1,92 @@
+﻿<Window x:Class="Calculator.MainWindowView"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Background="PeachPuff"
+        Title="{Binding Title}" Height="530" Width="330"
+        KeyDown="OnKeyDown">
+    <Grid>
+        
+        <Grid.Resources>
+            <Style x:Key="buttonStyle1" TargetType="{x:Type Button}">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Background" Value="SeaShell"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="BorderBrush" Value="PeachPuff"/>
+            </Style>
+            <Style x:Key="buttonStyle2" TargetType="{x:Type Button}">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Background" Value="PapayaWhip"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="BorderBrush" Value="PeachPuff"/>
+            </Style>
+            <Style x:Key="NumberButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource buttonStyle1}">
+                <Setter Property="Command" Value="{Binding OperandInput}"/>
+                <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
+            </Style>
+            <Style x:Key="OperatorButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource buttonStyle2}">
+                <Setter Property="Command" Value="{Binding OperatorInput}"/>
+                <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="150"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--자식 엘리먼트 배치-->
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Viewbox Grid.Row="1" HorizontalAlignment="Right" >
+                <TextBox FontFamily="Arial" 
+                         FontSize="50" 
+                         BorderThickness="0"
+                         Margin="3"
+                         Background="Transparent" 
+                         Text="{Binding InputText}"/>
+            </Viewbox>
+        </Grid>
+
+        <Button Grid.Row="1" Grid.Column="0"  Style="{StaticResource OperatorButtonStyle}" Content="÷"/>
+        <Button Grid.Row="1" Grid.Column="1"  Style="{StaticResource buttonStyle2}" Command="{Binding CEInput}" Content="CE"/>
+        <Button Grid.Row="1" Grid.Column="2"  Style="{StaticResource buttonStyle2}" Command="{Binding CInput}" Content="C"/>
+        <Button Grid.Row="1" Grid.Column="3"  Style="{StaticResource buttonStyle2}" Command="{Binding BackInput}">
+            <Image Source="erase.png"/>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" Content="7"/>
+        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" Content="8"/>
+        <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" Content="9"/>
+        <Button Grid.Row="2" Grid.Column="3" Style="{StaticResource OperatorButtonStyle}" FontSize="15" Content="x"/>
+        <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" Content="4"/>
+        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" Content="5"/>
+        <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" Content="6"/>
+        <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource OperatorButtonStyle}" Content="-"/>
+        <Button Grid.Row="4" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" Content="1"/>
+        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" Content="2"/>
+        <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" Content="3"/>
+        <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource OperatorButtonStyle}" FontSize="15" Content="+"/>
+        <Button Grid.Row="5" Grid.Column="0" Style="{StaticResource buttonStyle2}" Command="{Binding SignInput}" FontSize="15" Content="+/-"/>
+        <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource NumberButtonStyle}"  Content="0"/>
+        <Button Grid.Row="5" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" Background="PapayaWhip" FontSize="20" Content="."/>
+        <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource buttonStyle2}" Command="{Binding GetResult}" FontSize="20" Background="LightSalmon" Content="="/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\MainWindow.g.cs
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\App.g.cs
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\_02.Movie_MarkupCompile.cache
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\_02.Movie_MarkupCompile.lref
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\_02.Movie.exe
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\_02.Movie.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\MainWindow.baml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\_02.Movie.g.resources
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\Movie.Properties.Resources.resources
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\02. Movie.csproj.GenerateResource.Cache
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\_02.Movie.exe
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\_02.Movie.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\_02.Movie.exe.config
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\isfry.Wpf.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\95hae\OneDrive\바탕 화면\Solution\02. Movie\obj\Debug\02. Movie.csprojResolveAssemblyReference.cache

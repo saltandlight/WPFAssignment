@@ -1,4 +1,4 @@
-# TIL1 - 20200116
+# TIL1 - 20200116🧚‍♀️
 
 ## XML parsing
 - 1. foreach를 이용
@@ -63,10 +63,10 @@
 ```
 - LinQ가 시간이 더 걸림...유지 보수에 좋고 효과적이지만 이런 단점이 있다. 
 ## 2. Replace와 Trim을 사용할 때 권고사항
-- 1. ""은 String.Empty로 사용힘
+- 1. ""은 String.Empty로 사용함
 - 2. "\r\n"은 `Environment.NewLine`으로 사용함
 
-## 3. FilePath를 사용할 때 권과항
+## 3. FilePath를 사용할 때 권고사항
 ```C#
     this.Models = this.LoadXml(Path.Combine(Environment.CurrentDirectory, "MovieModel1.xml"));
 ```

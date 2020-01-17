@@ -60,10 +60,10 @@ public void SetViewModel(PersonModel dataSource)
 - 뷰모델: 특정 UI 에서 필요로 하는 유효성검사나 비헤이비어를 포함하는 뷰를 노출하기 위한 모델
 
 [MVVM을 구현할 때 하는 일반적인 실수]
-- 뷰모델에서 뷰로 모델을 전달하는 것
+- 뷰모델에서 뷰로 모델을 전달하는 것<br>
 `<TextBox Grid.Column="2" Grid.Row="1" Text="{Binding PersonModel.FirstName}" />`
 - 뷰가 모델에서 직접 속성을 바인딩하는 것 -> 비추
-- 뷰모델이 해당 속성을 노출하고 Person 모델의 FirstName이라는 속성으로 노출될 수 있게 분리해야 함
+- 뷰모델이 해당 속성을 노출하고 Person 모델의 FirstName이라는 속성으로 노출될 수 있게 분리해야 함<br>
 `<TextBox Grid.Column="2" Grid.Row="1" Text="{Binding FirstName}"/>`
 - 전체 모델을 직접적으로 뷰에 노출하지 않게 함 -> 어플리케이션의 안정성 개선!
 

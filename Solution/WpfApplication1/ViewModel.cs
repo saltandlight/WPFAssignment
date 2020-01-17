@@ -75,7 +75,7 @@ namespace WpfApplication1
             this.m_Models.Add(new UrlModel("네이버", "https://www.naver.com"));
             this.m_Models.Add(new UrlModel("다음", "https://www.daum.net"));
             this.m_Models.Add(new UrlModel("구글", "https://www.google.com"));
-            this.m_Models.Add(new UrlModel("깃허브", "https://github.com"));
+            this.m_Models.Add(new UrlModel("야후", "https://www.yahoo.com/"));
 
             if (num == 1)
             {

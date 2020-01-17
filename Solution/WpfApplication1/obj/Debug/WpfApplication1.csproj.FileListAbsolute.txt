@@ -18,3 +18,4 @@ C:\Users\95hae\OneDrive\바탕 화면\Solution\WpfApplication1\obj\Debug\WpfAppl
 C:\Users\95hae\OneDrive\바탕 화면\Solution\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 C:\Users\95hae\OneDrive\바탕 화면\Solution\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\Users\95hae\OneDrive\바탕 화면\Solution\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\95hae\OneDrive\바탕 화면\Solution\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache

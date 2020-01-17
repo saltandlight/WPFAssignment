@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Movie.View1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="clr-namespace:isfry.Wpf.Mvvm.Behavior;assembly=isfry.Wpf"
+             xmlns:local="clr-namespace:Movie"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="ListBoxStyle" TargetType="{x:Type ListBox}">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Background" Value="Bisque"/>
+                <Setter Property="Padding" Value="7"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="Gold">
+                <Label Content="무비 차트" FontSize="20" FontFamily="Comic Sans MS, Verdana"/>
+            </Border>
+            <ListBox Grid.Row="1"
+                     ItemsSource="{Binding Models}"
+                     IsSynchronizedWithCurrentItem="True"
+                     DisplayMemberPath="Title"
+                     Style="{StaticResource ListBoxStyle}"
+                     i:EventBehavior.Event="SelectionChanged"
+                     i:EventBehavior.Command="{Binding ChangeUrlCommand}"
+                     i:EventBehavior.CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=SelectedItem}">
+                <ListBox.Resources>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="Margin" Value="3,5,3,5"/>
+                    </Style>
+                </ListBox.Resources>
+            </ListBox>
+        </Grid>
+        <GridSplitter Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Frame Grid.Column="2" Source="{Binding sUrl}"/>
+    </Grid>
+</UserControl>

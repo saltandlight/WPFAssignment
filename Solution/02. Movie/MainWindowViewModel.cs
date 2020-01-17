@@ -1,118 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using System.Windows.Input;
-using static Movie.MainWindowViewModel;
 
 namespace Movie
 {
-    delegate void _SetURL(string aURL);
-
-    class MainWindowViewModel : INotifyPropertyChanged
+    internal class MainWindowViewModel: INotifyPropertyChanged
     {
-        #region Declare Definition
-            private string m_sUrl;
-        #endregion
 
-        #region Declare Field
-            private ObservableCollection<MovieModel> m_Models = new ObservableCollection<MovieModel>();
-        #endregion
+    #region Declare Definition
 
-        #region Property
-            public ObservableCollection<MovieModel> Models
-            {
-                get
-                {
-                    return this.m_Models;
-                }
-            }
+    #endregion
 
-            public string sUrl {
-                get
-                {
-                    return m_sUrl;
-                }
-                set
-                {
-                    this.m_sUrl = value;
+    #region Declare Field
+        
+    #endregion
 
-                    if (this.PropertyChanged != null)
-                        this.PropertyChanged(this, new PropertyChangedEventArgs("sUrl"));
-                }
-            }
+    #region Property
 
-            public ICommand ChangeUrl { get; private set; }
+        public View1 View1 { get; private set; }
+        public View2 View2 { get; private set; }
 
 
-        #endregion
+    #endregion
 
-        #region Constructor && Destructor
-            public MainWindowViewModel()
-            {
-                this.sUrl = "http://www.cgv.co.kr/";
+    #region Constructor && Destructor
 
-                this.Models.Add(new MovieModel { Title = "닥터 두리틀", Url= "http://www.cgv.co.kr/movies/detail-view/?midx=82531"});
-                this.Models.Add(new MovieModel { Title = "백두산", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82747"});
-                this.Models.Add(new MovieModel { Title = "스타워즈-라이브 오브 스카이워커", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82537"});
-                this.Models.Add(new MovieModel { Title = "시동", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82737"});
-                this.Models.Add(new MovieModel { Title = "미드웨이", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82940"});
-                this.Models.Add(new MovieModel { Title = "겨울왕국2", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82014"});
-                this.Models.Add(new MovieModel { Title = "나이브스 아웃", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82493"});
-                this.Models.Add(new MovieModel { Title = "포드 V 페라리", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=81914" });
-                this.Models.Add(new MovieModel { Title = "파바로티", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82980"});
-                this.Models.Add(new MovieModel { Title = "눈의 여왕4", Url = "http://www.cgv.co.kr/movies/detail-view/?midx=82712"});
+        public MainWindowViewModel()
+        {
+            ViewModel vm1 = new ViewModel();
+            ViewModel vm2 = vm1;
 
-                this.ChangeUrl = new ChangeUrl(this.SetURL);
-            }
-        #endregion
+            this.View1 = new View1(vm1);
+            this.View2 = new View2(vm2);
+        }
 
-        #region Delegate
+    #endregion
 
-            public delegate void TransferUrlDelegate(string str);
+    #region Method
+  
+    #endregion
 
-        #endregion
-        #region Method
+    #region Interface : INotifyPropertyChanged
 
-            private void SetURL(string aURL)
-            {
-                this.sUrl = aURL;
-            }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        #endregion
-
-        #region Interface : INotifyPropertyChanged
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-        #endregion
-       
+    #endregion
 
     }
-    
-    internal class ChangeUrl : ICommand
-    {
-        private _SetURL m_SetURL = null;
-
-        public ChangeUrl(_SetURL aSetURL)
-        {
-            this.m_SetURL = aSetURL;
-        }
-
-        public event EventHandler CanExecuteChanged;
-
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        public void Execute(object parameter)
-        {
-            MovieModel mv = (MovieModel)parameter;
-            this.m_SetURL(mv.Url);
-        }
-    }
-
 }

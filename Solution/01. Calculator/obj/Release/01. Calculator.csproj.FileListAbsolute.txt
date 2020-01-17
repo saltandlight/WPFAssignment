@@ -21,3 +21,4 @@ C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\ja\Sys
 C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\ko\System.Windows.Interactivity.resources.dll
 C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
 C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\95hae\OneDrive\바탕 화면\Solution\01. Calculator\obj\Release\01. Calculator.csprojResolveAssemblyReference.cache

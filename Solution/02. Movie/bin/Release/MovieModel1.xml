@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Movies>
+  <item>
+    <title>닥터 두리틀</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82531</url>
+  </item>
+  <item>
+    <title>백두산</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82747</url>
+  </item>
+  <item>
+    <title>스타워즈-라이브 오브 스카이워커</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82537</url>
+  </item>
+  <item>
+    <title>시동</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82737</url>
+  </item>
+  <item>
+    <title>미드웨이</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82940</url>
+  </item>
+  <item>
+    <title>겨울왕국2</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82014</url>
+  </item>
+  <item>
+    <title>나이브스 아웃</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82493</url>
+  </item>
+  <item>
+    <title>포드 V 페라리</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=81914</url>
+  </item>
+  <item>
+    <title>파바로티</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82980</url>
+  </item>
+  <item>
+    <title>눈의 여왕4</title>
+    <url>http://www.cgv.co.kr/movies/detail-view/?midx=82712</url>
+  </item>
+</Movies>

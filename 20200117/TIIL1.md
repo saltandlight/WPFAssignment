@@ -118,8 +118,8 @@ public void SetViewModel(PersonModel dataSource)
 3. 내비게이션 서비스와 유틸리티에 대한 상대 의존관계와 뷰모델을 등록함
 4. 해당하는 뷰모델의 최종 인젝션과 뷰를 등록함
 
-[오늘 WpfApplication1을 통해 배운 것]
-*코드를 짜는 습관의 중요성*
+[오늘 WpfApplication1을 통해 배운 것]<br>
+*코드를 짜는 습관의 중요성*<br>
     - 접근 제한자 주의
     - 꼭 빌드를 하기 
     - 틀을 만들고(뷰) 확인 -> 모델을 만들고 -> 뷰 모델을 만들고 확인

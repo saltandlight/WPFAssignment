@@ -121,5 +121,6 @@ public void SetViewModel(PersonModel dataSource)
 [오늘 WpfApplication1을 통해 배운 것]
 *코드를 짜는 습관의 중요성*
     - 접근 제한자 주의
+    - 꼭 빌드를 하기 
     - 틀을 만들고(뷰) 확인 -> 모델을 만들고 -> 뷰 모델을 만들고 확인
     - 차근차근 순서대로 짜고 확인을 해야 합니다!

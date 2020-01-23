@@ -100,6 +100,8 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
 ```
 - 솔직히 뭔 소리인지 모르겠다.
 - 이걸 사용하면 실행할 항목을 정할 수 있어서 각 작업마다 클래스를 만들 필요가 없음..!
+- 첫 번째 인수는 실행될 델리게이트, 두 번째 인수는 실행 조건을 처리하는 델리게이트
+- 델리게이트 이름 없이 그냥 코드를 괄호 안에 써도 됨
 - 자바와 다르게 Action 과 Function을 변수로 사용한다!
 ```C#
     this.Models = new ObservableCollection<MovieModel>(this.SelectResult());
@@ -111,4 +113,5 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
     this.DeleteCommand = new RelayCommad<MovieModel>(this.DeleteResult);
 ```
 
+- 아 집에 가고 싶다. 
 - 참고한 사이트:https://www.c-sharpcorner.com/UploadFile/20c06b/icommand-and-relaycommand-in-wpf/

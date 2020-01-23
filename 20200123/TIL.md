@@ -1,9 +1,9 @@
 # 오늘 배운 것
 
 ## 쿼리 사용 시 권고사항
-- 쿼리를 이러한 방식으로 사용해왔음
+- 쿼리를 이러한 방식으로 사용해왔음<br>
 `string sql = "INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX_SEQ.NEXTVAL,'"+this.Title+"', '"+ this.URL;`
-- 그러나 아래와 같은 방식이 사용하기에 더 좋다...!
+- 그러나 아래와 같은 방식이 사용하기에 더 좋다...!<br>
 `string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX_SEQ.NEXTVAL,'{0}','{1}')", this.Title, this.URL);`
 
 ## 네이밍

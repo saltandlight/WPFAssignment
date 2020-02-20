@@ -9,7 +9,7 @@
   this.m_Timer.Tick += this.OnTick;
   this.m_Timer.Start();
   
-  this.DBConnect = new DBConnect(this.UpdateResult);
+  this.DBConnectCommand = new DBConnectCommand(this.UpdateResult);
 ```
 
 2. Execute 함수 안에서 도는 코드

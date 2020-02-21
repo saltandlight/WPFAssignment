@@ -107,9 +107,9 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
     this.Models = new ObservableCollection<MovieModel>(this.SelectResult());
     this.SelectCommand = new RelayCommad<MovieModel>(this.Clear);
     //InsertResult는 Title과 URL이 둘 다 비어있지 않을 때 명령이 먹힐 수 있는 것!
-    this.InsertCommand = new RelayCommad(this.InsertResult, () => !string.IsNullOrEmpty(this.Title) || !string.IsNullOrEmpty(this.URL));
+    this.InsertCommand = new RelayCommad(this.InsertResult, () => !string.IsNullOrEmpty(this.Title) && !string.IsNullOrEmpty(this.URL));
     //UpdateResult는 aModel이 변수로 사용되는데 aModel의 Title과 Url이 비어있지 않을 때 명령이 먹힐 수 있는 것!
-    this.UpdateCommand = new RelayCommad<MovieModel>(this.UpdateResult, aModel => !string.IsNullOrEmpty(this.Title) || !string.IsNullOrEmpty(this.URL));
+    this.UpdateCommand = new RelayCommad<MovieModel>(this.UpdateResult, aModel => !string.IsNullOrEmpty(this.Title) && !string.IsNullOrEmpty(this.URL));
     this.DeleteCommand = new RelayCommad<MovieModel>(this.DeleteResult);
 ```
 - 참고한 사이트:https://www.c-sharpcorner.com/UploadFile/20c06b/icommand-and-relaycommand-in-wpf/

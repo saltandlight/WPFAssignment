@@ -31,6 +31,33 @@
 - 데이터템플릿은 비하인드 코드를 포함하지 않는 UI 정의를 위한 명확한 방법
     - 뷰모델을 자동적으로 바인딩하는 기본적인 방법임
 
+### Prism 
+#### Prism 설계의 목표
+- 재사용성
+- 확장성
+- 유연성
+- 협업
+- 품질
+
+### Prism의 주요 개념들
+- Modules:
+    - 각 모듈별로 구분하여 View나 Commands 등등을 구현한다는 것
+- Module catalog:
+    - 그 Module을 관리(Bootstrapper에게 알려주기도 하는)하는 역할
+- Shell:
+    - 기본적인 Application Window
+- Views
+- View models
+- Models
+- Commands
+- Regions
+- Navigation
+- EventAggregator
+- Dependency injection container
+- Services
+- Controllers
+- Bootstrapper
+
 ### 뷰
 - 사용자와 함께 상호작용하고 사용자들에게 데이터를 표시하는 역할을 가진 시각적인 인터페이스
 - 뷰는 유저컨트롤이나 윈도우 혹은 페이지가 됨
@@ -70,6 +97,8 @@ public void SetViewModel(PersonModel dataSource)
 ### WPF와 실버라이트에서의 커맨드
 - WPF와 실버라이트의 가장 흥미로운 기능 중 한 가지: ICommand 인터페이스, 이 인터페이스의 동작 방식
 - ICommand 인터페이스: 커맨드의 실행을 제어하는 Execute와 CanEXecute 메서드를 제공함
+- 말 그대로 명령을 내리는 객체 
+- ViewModel을 통해 View의 UI를 실행할 수 있게 해주는 개념
 - WPF와 실버라이트에서 바인딩 엔진과 ICommand 구현을 사용하면 뷰에서 ICommand 커맨드가 제공하는 뷰모델 사용 가능
 - 버튼이나 링크와 같은 컨트롤과 커맨드를 바인딩 가능함
 - 일반적인 방법: 뷰모델 자체 내부에 로직을 평가할 수 있는 private 접근자와 함께 뷰모델에 퍼블릭 속성으로 ICommand 타입을 만드는 것
@@ -103,6 +132,29 @@ public void SetViewModel(PersonModel dataSource)
     - 이벤트에 대해 어떠한 구독이 있는 경우 속성의 이름을 포함하여 이벤트를 발생시켜야 함
 - 제너릭<T> 는 XAML 데이터바인드 엔진을 사용하여 뷰에서 노출하려고 하는 모델임
 - 모델이 변경되면 OnPropertyChanged 이벤트를 실행시키고 UI에 변경을 통보할 것
+
+### Regions
+- View가 출력되는 지역을 나타냄
+- 특정 View Class를 MainWindow View에 직접 구현하는 것이 아니라 Module Catalog 통해 하나의 단계를 넘어서 전달하게 함
+
+### EventAggregator
+- 컴포넌트 간의 통신을 위해 존재함
+- 느슨한 결합으로 이 컴포넌트들이 이루어져 있음 
+-> 이들을 위해 Prism은 EventAggregator 컴포넌트를 제공<br>
+-> 중간자적 역할을 하여 각 모듈들은 EventAggregator를 정의하여 사용해야 함
+
+### Dependency Injection Container
+- Prism에서 DI(의존성 주입)를 위해 제공되는 기능
+- Prism은 Unity를 통해 해당 설계를 제공, ServiceLocator를 통해 DI Container가 동작
+
+### Service
+- Window Service같은 개념이 아니라 추가적으로 제공되는 기능
+- 비 UI적인 기능들에 대한 제공을 뜻함(로깅, 예외 관리, Data Access같은 역할 제공)
+
+### Bootstrapper
+- Prism의 각종 컴포넌트와 서비스들을 초기화해줌
+- 초기화에 Application단의 DI container를 등록하기도 함
+- 각종 module catalog 와 Shell의 view, view model들을 초기화하여 출력함
 
 ### MVVM과 IoC
 - 어플리케이션에서 공통적인 서비스나 컨테이너를 어떻게 로드할 것인지?

@@ -20,7 +20,8 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
 
 ## 리팩토링
 - 수정하기 쉽도록 코드를 바꾸는 작업
-- 비슷한 색을 가진 메소드가 남발되고 있다면 --> 공통적인 작업을 담당하는 코드들을 하나의 메소드로 뺼 것
+- 비슷한 색을 가진 메소드가 남발되고 있다면<br> 
+ --> 공통적인 작업을 담당하는 코드들을 하나의 메소드로 뺼 것
 - Command가 계속 남발되고 있다면 공통적인 부분을 가진 코드를 빼서 상속 관계로 만들어주기
 - `using`을 사용할 수 있다면 사용할 것(Garbage Collector의 일을 줄여줌) 
 
@@ -51,7 +52,7 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
         }
  }
 ```
-- 버뜨... 각 명령마다 이런 식으로 새로 구현해야 한다는 단점이 있다...
+- 그러나 각 명령마다 이런 식으로 새로 구현해야 한다는 단점이 있다...
 - 이런 문제를 해결하고 싶어서 실행될 Action들을 인스턴스화할 수 있는 RelayCommand가 등장함..!
 
 ## RelayCommand
@@ -98,7 +99,6 @@ string sql = string.Format("INSERT INTO hblee_Test (T_NUM, TITLE, URL) VALUES(EX
         }
     }
 ```
-- 솔직히 뭔 소리인지 모르겠다.
 - 이걸 사용하면 실행할 항목을 정할 수 있어서 각 작업마다 클래스를 만들 필요가 없음..!
 - 첫 번째 인수는 실행될 델리게이트, 두 번째 인수는 실행 조건을 처리하는 델리게이트
 - 델리게이트 이름 없이 그냥 코드를 괄호 안에 써도 됨

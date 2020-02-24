@@ -177,3 +177,5 @@ public void SetViewModel(PersonModel dataSource)
 - 꼭 빌드를 하기 
 - 틀을 만들고(뷰) 확인 -> 모델을 만들고 -> 뷰 모델을 만들고 확인
 - 차근차근 순서대로 짜고 확인을 해야 합니다!
+
+참고:https://pjh2104site.wordpress.com/2016/06/21/wpf-prism%EC%9D%80-%EC%96%B4%EB%94%94%EC%97%90-%EC%93%B0%EB%82%98/

@@ -13,3 +13,6 @@
 ## using
 - 리소스 정리를 위한 메소드를 만들어두어야 함
 - IDisposable interface를 상속받아야 하고 리소스 정리를 위한 Dispose()를 구현해야 함 
+- using이 리소스를 정리할 수 있는 Dispose 함수를 부를 때
+  - using 구문이 정상적으로 종료
+  - using 구문 수행 중 
